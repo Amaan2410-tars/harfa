@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Admissions() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
@@ -5,14 +7,14 @@ export default function Admissions() {
         <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-2.5 h-6 bg-[var(--accent)]" />
-            <a href="/" className="text-xl font-semibold tracking-wide">Harfa <span className="accent">AI</span></a>
+            <Link href="/" className="text-xl font-semibold tracking-wide">Harfa <span className="accent">AI</span></Link>
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-white/70">
-            <a className="hover:text-white" href="/courses">Courses</a>
-            <a className="hover:text-white" href="/curriculum">Curriculum</a>
-            <a className="hover:text-white" href="/admissions">Admissions</a>
-            <a className="hover:text-white" href="/contact">Contact</a>
-            <a className="bg-[var(--accent)] text-black px-4 py-2 rounded-md font-medium hover:brightness-110" href="/contact">Apply Now</a>
+            <Link className="hover:text-white" href="/courses">Courses</Link>
+            <Link className="hover:text-white" href="/curriculum">Curriculum</Link>
+            <Link className="hover:text-white" href="/admissions">Admissions</Link>
+            <Link className="hover:text-white" href="/contact">Contact</Link>
+            <Link className="bg-[var(--accent)] text-black px-4 py-2 rounded-md font-medium hover:brightness-110" href="/contact">Apply Now</Link>
           </nav>
         </div>
       </header>
@@ -63,9 +65,9 @@ export default function Admissions() {
               <h2 className="text-2xl sm:text-3xl font-bold">Ready to apply?</h2>
               <p className="text-white/70 mt-2">Submit your application and we’ll reach out within 24 hours.</p>
             </div>
-            <a className="bg-[var(--accent)] text-black px-6 py-3 rounded-md font-semibold hover:brightness-110" href="/contact">
+            <Link className="bg-[var(--accent)] text-black px-6 py-3 rounded-md font-semibold hover:brightness-110" href="/contact">
               Apply now
-            </a>
+            </Link>
           </div>
         </section>
       </main>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Courses() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
@@ -5,14 +7,14 @@ export default function Courses() {
         <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-2.5 h-6 bg-[var(--accent)]" />
-            <a href="/" className="text-xl font-semibold tracking-wide">Harfa <span className="accent">AI</span></a>
+            <Link href="/" className="text-xl font-semibold tracking-wide">Harfa <span className="accent">AI</span></Link>
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-white/70">
-            <a className="hover:text-white" href="/courses">Courses</a>
-            <a className="hover:text-white" href="/curriculum">Curriculum</a>
-            <a className="hover:text-white" href="/admissions">Admissions</a>
-            <a className="hover:text-white" href="/contact">Contact</a>
-            <a className="bg-[var(--accent)] text-black px-4 py-2 rounded-md font-medium hover:brightness-110" href="/contact">Apply Now</a>
+            <Link className="hover:text-white" href="/courses">Courses</Link>
+            <Link className="hover:text-white" href="/curriculum">Curriculum</Link>
+            <Link className="hover:text-white" href="/admissions">Admissions</Link>
+            <Link className="hover:text-white" href="/contact">Contact</Link>
+            <Link className="bg-[var(--accent)] text-black px-4 py-2 rounded-md font-medium hover:brightness-110" href="/contact">Apply Now</Link>
           </nav>
         </div>
       </header>
@@ -49,9 +51,9 @@ export default function Courses() {
               </ul>
               <div className="flex items-center justify-between">
                 <span className="text-2xl font-bold">₹45,000</span>
-                <a href="/contact" className="bg-[var(--accent)] text-black px-6 py-3 rounded-md font-semibold hover:brightness-110">
+                <Link href="/contact" className="bg-[var(--accent)] text-black px-6 py-3 rounded-md font-semibold hover:brightness-110">
                   Apply Now
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -69,9 +71,9 @@ export default function Courses() {
               </ul>
               <div className="flex items-center justify-between">
                 <span className="text-2xl font-bold">₹75,000</span>
-                <a href="/contact" className="bg-[var(--accent)] text-black px-6 py-3 rounded-md font-semibold hover:brightness-110">
+                <Link href="/contact" className="bg-[var(--accent)] text-black px-6 py-3 rounded-md font-semibold hover:brightness-110">
                   Apply Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>

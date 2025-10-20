@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Curriculum() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
@@ -5,14 +7,14 @@ export default function Curriculum() {
         <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-2.5 h-6 bg-[var(--accent)]" />
-            <a href="/" className="text-xl font-semibold tracking-wide">Harfa <span className="accent">AI</span></a>
+            <Link href="/" className="text-xl font-semibold tracking-wide">Harfa <span className="accent">AI</span></Link>
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-white/70">
-            <a className="hover:text-white" href="/courses">Courses</a>
-            <a className="hover:text-white" href="/curriculum">Curriculum</a>
-            <a className="hover:text-white" href="/admissions">Admissions</a>
-            <a className="hover:text-white" href="/contact">Contact</a>
-            <a className="bg-[var(--accent)] text-black px-4 py-2 rounded-md font-medium hover:brightness-110" href="/contact">Apply Now</a>
+            <Link className="hover:text-white" href="/courses">Courses</Link>
+            <Link className="hover:text-white" href="/curriculum">Curriculum</Link>
+            <Link className="hover:text-white" href="/admissions">Admissions</Link>
+            <Link className="hover:text-white" href="/contact">Contact</Link>
+            <Link className="bg-[var(--accent)] text-black px-4 py-2 rounded-md font-medium hover:brightness-110" href="/contact">Apply Now</Link>
           </nav>
         </div>
       </header>
@@ -144,7 +146,7 @@ export default function Curriculum() {
 
         {/* Learning Outcomes */}
         <section className="max-w-6xl mx-auto px-6 py-16">
-          <h2 className="text-3xl font-bold text-center mb-12">What You'll Master</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">What You&apos;ll Master</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               "Python programming & data science",

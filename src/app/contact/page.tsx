@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Contact() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
@@ -5,13 +7,13 @@ export default function Contact() {
         <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-2.5 h-6 bg-[var(--accent)]" />
-            <a href="/" className="text-xl font-semibold tracking-wide">Harfa <span className="accent">AI</span></a>
+            <Link href="/" className="text-xl font-semibold tracking-wide">Harfa <span className="accent">AI</span></Link>
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-white/70">
-            <a className="hover:text-white" href="/courses">Courses</a>
-            <a className="hover:text-white" href="/curriculum">Curriculum</a>
-            <a className="hover:text-white" href="/admissions">Admissions</a>
-            <a className="hover:text-white" href="/contact">Contact</a>
+            <Link className="hover:text-white" href="/courses">Courses</Link>
+            <Link className="hover:text-white" href="/curriculum">Curriculum</Link>
+            <Link className="hover:text-white" href="/admissions">Admissions</Link>
+            <Link className="hover:text-white" href="/contact">Contact</Link>
           </nav>
         </div>
       </header>
