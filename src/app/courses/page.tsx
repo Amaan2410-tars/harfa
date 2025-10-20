@@ -36,7 +36,7 @@ export default function Courses() {
 
         {/* Programs */}
         <section className="max-w-6xl mx-auto px-6 py-16">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Foundation Program */}
             <div className="rounded-2xl border border-white/10 p-8 bg-white/[.03]">
               <div className="w-12 h-1 bg-[var(--accent)] mb-4" />
@@ -71,6 +71,27 @@ export default function Courses() {
               </ul>
               <div className="flex items-center justify-between">
                 <span className="text-2xl font-bold">₹75,000</span>
+                <Link href="/contact" className="bg-[var(--accent)] text-black px-6 py-3 rounded-md font-semibold hover:brightness-110">
+                  Apply Now
+                </Link>
+              </div>
+            </div>
+
+            {/* Gen AI Program */}
+            <div className="rounded-2xl border border-white/10 p-8 bg-white/[.03]">
+              <div className="w-12 h-1 bg-[var(--accent)] mb-4" />
+              <h2 className="text-2xl font-bold mb-3">Gen AI Program</h2>
+              <p className="text-white/70 mb-6">Master Generative AI, LLMs, and AI applications. Build real-world GenAI projects.</p>
+              <ul className="space-y-2 text-white/80 mb-6">
+                <li>• 8 weeks intensive</li>
+                <li>• LLMs & Transformers</li>
+                <li>• Prompt Engineering</li>
+                <li>• RAG & Fine-tuning</li>
+                <li>• 4 GenAI projects</li>
+                <li>• Industry applications</li>
+              </ul>
+              <div className="flex items-center justify-between">
+                <span className="text-2xl font-bold">₹10,000</span>
                 <Link href="/contact" className="bg-[var(--accent)] text-black px-6 py-3 rounded-md font-semibold hover:brightness-110">
                   Apply Now
                 </Link>

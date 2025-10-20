@@ -89,6 +89,61 @@ export default function Curriculum() {
           </div>
         </section>
 
+        {/* Gen AI Program Curriculum */}
+        <section className="max-w-6xl mx-auto px-6 py-16">
+          <h2 className="text-3xl font-bold mb-8">Gen AI Program (8 weeks)</h2>
+          <div className="space-y-6">
+            {[
+              {
+                week: "Weeks 1-2",
+                title: "LLMs & Transformers Fundamentals",
+                topics: ["Transformer architecture", "Attention mechanisms", "BERT, GPT models", "Tokenization & embeddings"],
+                project: "Text generation model"
+              },
+              {
+                week: "Weeks 3-4",
+                title: "Prompt Engineering & Fine-tuning",
+                topics: ["Prompt design patterns", "Few-shot learning", "Model fine-tuning", "Parameter-efficient methods"],
+                project: "Custom prompt system"
+              },
+              {
+                week: "Weeks 5-6",
+                title: "RAG & Advanced Applications",
+                topics: ["Retrieval-Augmented Generation", "Vector databases", "Document processing", "Multi-modal AI"],
+                project: "RAG chatbot"
+              },
+              {
+                week: "Weeks 7-8",
+                title: "Production & Industry Applications",
+                topics: ["Model deployment", "API integration", "Cost optimization", "Ethics & safety"],
+                project: "End-to-end GenAI application"
+              }
+            ].map((module, index) => (
+              <div key={index} className="rounded-lg border border-white/10 p-6 bg-white/[.03]">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-1 bg-[var(--accent)]" />
+                  <span className="text-sm font-medium text-[var(--accent)]">{module.week}</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">{module.title}</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-medium mb-2">Topics covered:</h4>
+                    <ul className="space-y-1 text-white/70 text-sm">
+                      {module.topics.map((topic, i) => (
+                        <li key={i}>• {topic}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">Project:</h4>
+                    <p className="text-white/70 text-sm">{module.project}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Advanced Program Curriculum */}
         <section className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-3xl font-bold mb-8">AI Advanced Program (16 weeks)</h2>
@@ -153,6 +208,9 @@ export default function Curriculum() {
               "Machine learning algorithms",
               "Deep learning & neural networks",
               "Large language models & NLP",
+              "Generative AI & LLMs",
+              "Prompt engineering & fine-tuning",
+              "RAG & vector databases",
               "MLOps & model deployment",
               "Computer vision & image processing",
               "Natural language processing",
