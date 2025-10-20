@@ -28,7 +28,7 @@ export default function Contact() {
         </section>
 
         <section className="max-w-3xl mx-auto px-6 pb-24">
-          <form name="harfa-contact" method="POST" data-netlify="true" className="space-y-4 rounded-2xl border border-white/10 p-6 bg-white/[.03]">
+          <form name="harfa-contact" method="POST" action="/contact" className="space-y-4 rounded-2xl border border-white/10 p-6 bg-white/[.03]">
             <input type="hidden" name="form-name" value="harfa-contact" />
             <div>
               <label className="block text-sm mb-1">Full name</label>
